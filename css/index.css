@@ -189,6 +189,68 @@ header {
   background-repeat: no-repeat;
   text-align: center;
 }
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+  }
+  
+  nav h1 a {
+    font-family: var(--sans);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .socialicons{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+  }
+  nav h1 [class*="fa-"] {
+    font-size: 100%;
+    color: var(--aqua);
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav a:hover,
+  nav [class*="fa-"]:hover {
+    color: var(--magenta);
+  }
+  
+  @media (min-width: 850px) {
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
 
 /* spacers */
 .spacer {
@@ -209,8 +271,22 @@ header {
   text-align: center;
   background-color: rgb(0, 4, 17);
   flex-direction: row;
-  flex-wrap: wrap;
+  
 }
+
+.food-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+.foodimg{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
 
 /* about us section */
 .about {
@@ -222,6 +298,7 @@ header {
   background-position: top;
   background-repeat: no-repeat;
 }
+
 
 .about-container {
   height: 100%;
